@@ -48,5 +48,9 @@ export const Content = styled.div`
                 background: ${darken(0.06, '#3b9eff')};
             }
         }
+
+        a {
+            color: #fff;
+        }
     }
 `;
