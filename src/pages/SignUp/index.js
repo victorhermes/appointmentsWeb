@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Form, Input } from '@rocketseat/unform';
-import { Helmet } from 'react-helmet';
 import * as Yup from 'yup';
 import logo from '~/assets/logo.svg';
 
@@ -16,11 +15,6 @@ const schema = Yup.object().shape({
 export default function SignUp() {
     return (
         <>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Criar conta</title>
-                <link rel="canonical" href="http://mysite.com/example" />
-            </Helmet>
             <img src={logo} alt="Logo" />
 
             <Form schema={schema}>
