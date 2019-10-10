@@ -3,6 +3,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import './config/ReactotronConfig';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import Routes from './routes';
 import history from './services/history';
 
@@ -17,6 +18,7 @@ function App() {
                 <Router history={history}>
                     <Routes />
                     <GlobalStyle />
+                    <ToastContainer />
                 </Router>
             </PersistGate>
         </Provider>
