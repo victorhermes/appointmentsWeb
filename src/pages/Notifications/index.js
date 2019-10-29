@@ -1,6 +1,12 @@
 import React from 'react';
 import { MdNotifications } from 'react-icons/md';
-import { Container, Badge, NotificationList, Notification } from './styles';
+import {
+    Container,
+    Badge,
+    NotificationList,
+    Scroll,
+    Notification,
+} from './styles';
 
 export default function Notifications() {
     return (
@@ -10,21 +16,38 @@ export default function Notifications() {
             </Badge>
 
             <NotificationList>
-                <Notification unread>
-                    <p>Um novo agendamento foi concluído</p>
-                    <time>há 1 dia</time>
-                    <button type="button">Marcar como lido</button>
-                </Notification>
-                <Notification>
-                    <p>Um novo agendamento foi concluído</p>
-                    <time>há 1 dia</time>
-                    <button type="button">Marcar como lido</button>
-                </Notification>
-                <Notification>
-                    <p>Um novo agendamento foi concluído</p>
-                    <time>há 1 dia</time>
-                    <button type="button">Marcar como lido</button>
-                </Notification>
+                <Scroll>
+                    <Notification unread>
+                        <p>Um novo agendamento foi concluído</p>
+                        <time>há 1 dia</time>
+                        <button type="button">Marcar como lido</button>
+                    </Notification>
+                    <Notification>
+                        <p>Um novo agendamento foi concluído</p>
+                        <time>há 1 dia</time>
+                        <button type="button">Marcar como lido</button>
+                    </Notification>
+                    <Notification>
+                        <p>Um novo agendamento foi concluído</p>
+                        <time>há 1 dia</time>
+                        <button type="button">Marcar como lido</button>
+                    </Notification>
+                    <Notification>
+                        <p>Um novo agendamento foi concluído</p>
+                        <time>há 1 dia</time>
+                        <button type="button">Marcar como lido</button>
+                    </Notification>
+                    <Notification>
+                        <p>Um novo agendamento foi concluído</p>
+                        <time>há 1 dia</time>
+                        <button type="button">Marcar como lido</button>
+                    </Notification>
+                    <Notification>
+                        <p>Um novo agendamento foi concluído</p>
+                        <time>há 1 dia</time>
+                        <button type="button">Marcar como lido</button>
+                    </Notification>
+                </Scroll>
             </NotificationList>
         </Container>
     );
