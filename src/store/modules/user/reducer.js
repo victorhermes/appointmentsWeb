@@ -9,10 +9,9 @@ export default function user(state = INITIAL_STATE, action) {
         switch (action.type) {
             case '@auth/SIGN_IN_SUCCESS': {
                 draft.profile = action.payload.user;
-                draft.signed = true;
                 break;
             }
-            case '@auth/UPDATE_PROFILE_SUCCESS': {
+            case '@user/UPDATE_PROFILE_SUCCESS': {
                 draft.profile = action.payload.profile;
                 break;
             }
